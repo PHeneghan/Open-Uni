@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>ODDLU Course Selection</title>
+	<script type = "text/javascript">
+	 function validate(){
+	 
+	 if (course.value=="Computer Science"){
+		alert("Welcome to Computer Science");
+	}else if(course.value=="Chemistry"){
+		alert("Welcome to your Chemistry");
+	}else if(course.value=="Physics"){
+		alert("Welcome to your Physics");
+	}else if(course.value=="Biology"){
+		alert("Welcome to your Biology");
+	}else if(course.value=="Mathematics"){
+		alert("Welcome to your Mathematics");
+	}else if(course.value=="Engineering"){
+		alert("Welcome to your Engineering");
+	}else{
+	    alert("Must select a course");
+	}
+	}
+	</script>
+	<link rel="stylesheet" type="text/css" href="CSS1.css" />	<!-- External CSS file -->
+</head>
+<body>
+<form id="register"> <!-- form id -->
+<h1> Course Selection for Open Door Distance Learning University</h1>
+  <fieldset> 
+    <legend class=course>Course Selection</legend> 
+    <div> 
+        <label>Course <!-- Course Selection -->
+        <input id="course" name="course" list="course-list" type="text" placeholder="Select course" required> 
+        <datalist id="course-list"> 
+        	<option label="Computer Science" value="Computer Science"></option> 
+        	<option label="Physics" value="Physics"></option> 
+        	<option label="Chemistry" value="Chemistry"></option> 
+        	<option label="Biology" value="Biology"></option> 
+        	<option label="Mathematics" value="Mathematics"></option>
+			<option label="Engineering" value="Engineering"></option>
+        </datalist>
+		</label> 
+    </div> 
+		<input type=button name=button1 value="Submit" onclick="validate()";>
+	</div>
+	</fieldset>
+
+<div>
+<a name = "Link 2" href="./home page.html" title="Home">
+Home
+</a>
+</div>
+<div>
+<a name = "Link 2" href="./page 4.html" title="Next">
+Next
+</a>
+</div>
+</html>
+  
+  

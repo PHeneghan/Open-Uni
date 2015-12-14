@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="CSS1.css" />	<!-- External CSS file -->
+	<title>ODDLU Registration</title>
+	<style type="text/css">
+<!-- Internal CSS -->
+		legend { font-weight: bold; text-decoration: underline;}
+		body {background-image: url("ODDLU.JPG");} 
+	</style>
+	<script type = "text/javascript">
+			function validate()
+			{ if((firstname.value=="")||(surname.value=="")||(dob.value=="")||(sex.value=="")||(country.value=="")||(address.value=="")||(email.value=="")||(phone.value=="")) { 
+				window.alert("Please fill in all fields"); 
+			}else{"./page 3.html";
+			}
+			}
+	</script>	
+</head>
+<body>
+<form id="register"> <!-- form id -->
+<body>
+<h1> Student Registration for Open Door Distance Learning University</h1>
+  <fieldset> 
+    <legend>Student details</legend> 
+    <div> 
+        <label>First Name<br>
+        <input id="firstname" name="firstname" type="text" placeholder="First name only" required autofocus> 
+		</br>
+		</label>
+    </div>
+    <div> 
+        <label>Surname<br>
+        <input id="surname" name="surname" type="text" placeholder="Surname only" required autofocus> 
+		</br>
+		</label>
+    </div>
+    <div> 
+    	<label>Date of Birth<br>
+        <input id="dob" name="dob" type="date" placeholder="dd/mm/yy" required>
+		</br>
+		</label>
+    </div> 
+		<fieldset>
+		<legend>Sex</legend> <!-- Gives two Button options -->
+		<div> 
+			<input id="male" name="male" type="radio"> 
+			<label for="male">Male</label> 
+			<input id="female" name="female" type="radio">
+			<label for="female">Female</label> 
+		</div> 
+		</fieldset>
+	<div> 
+        <label>Nationality <br>
+        <input id="country" name="country" list="country-names" type="text" placeholder="select country" required> 
+        <datalist id="country-names"> 
+        	<option label="Ireland" value="Ireland"></option> 
+        	<option label="Northern Ireland" value="Northern Ireland"></option> 
+        	<option label="England" value="England"></option> 
+        	<option label="Scotland" value="Scotland"></option> 
+        	<option label="Wales" value="Wales"></option>
+			<option label="United States" value="United States"></option>
+        </datalist>
+		</br>
+		</label> 
+    </div> 
+	<div> 
+        <label>Address <br>
+        <textarea id="address" name="address" rows=5 required></textarea>
+		</br>
+		</label> 
+    </div> 
+	<div> 
+        <label>Email <br>
+        <input id="email" name="email" type="email" placeholder="example@domain.com" required>
+		</br>
+		</label> 
+    </div> 
+    <div> 
+        <label>Telephone 
+		<br>
+        <input id="phone" name="phone" type="tel" placeholder="Eg. +35388 1234567" required>
+		</br>
+		</label> 
+    </div> 
+	<div> 
+        <label>Alternative Telephone <br>
+        <input id="phone" name="phone" type="tel" placeholder="Eg. +35388 2345678">
+		</br>
+		</label> 
+    </div> 
+	<div> 
+        <label>Social Network Page <br>
+        <input id="url" name="url" type="url" placeholder="http://www.socialnetwork.com/page">
+		</br>
+		</label> 
+    </div>
+	<br>
+	</br>
+	<div>
+	<input type=button name=button1 value="Submit" onclick="validate()";>
+	</div>
+</fieldset>
+<div>
+<a  href="./home page.html" title="Home" >
+Home
+</a>
+</div>
+<div>
+<a  href="./page 3.html" title="Next" >
+Next
+</a>
+</div>
+</body>
+</html>
+  
+  
